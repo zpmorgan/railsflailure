@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'therubyracer'
+gem 'execjs'
+
 gem 'pixel_editor', :git => 'git://github.com/PixieEngine/PixelEditor.git'
 
 gem 'rails', '3.2.11'
