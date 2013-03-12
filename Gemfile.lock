@@ -1,8 +1,29 @@
 GIT
+  remote: git://github.com/PixieEngine/EditorBase
+  revision: 769429b0dbab12259f9e230d88e18d6e4ceda3cd
+  specs:
+    editor_base (0.0.1)
+      backbone-source
+      bootstrap-sass
+      coffee-filter
+      compass
+      cornerstone-source
+      haml_coffee_assets
+      jquery-source
+      underscore-source
+
+GIT
   remote: git://github.com/PixieEngine/PixelEditor.git
-  revision: df22b15e92e5bca5205196f96ef0e7bddc0f6569
+  revision: 489134df9bcdbf40a9b5e366f7ccb5a321715df2
   specs:
     pixel_editor (0.0.1)
+
+GIT
+  remote: git://github.com/PixieEngine/pixie_sass
+  revision: 9c4f7df796b02fde788f8e484d2b079f60e957b8
+  specs:
+    pixie_sass (0.0.1)
+      compass
 
 GEM
   remote: https://rubygems.org/
@@ -35,7 +56,14 @@ GEM
       i18n (~> 0.6)
       multi_json (~> 1.0)
     arel (3.0.2)
+    backbone-source (0.0.3)
+    bootstrap-sass (2.3.0.1)
+      sass (~> 3.2)
     builder (3.0.4)
+    chunky_png (1.2.7)
+    coffee-filter (0.1.3)
+      coffee-script (>= 2.2.0)
+      haml (< 4.0)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -43,15 +71,29 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.1)
+    compass (0.12.2)
+      chunky_png (~> 1.2)
+      fssm (>= 0.2.7)
+      sass (~> 3.1)
+    compass-rails (1.0.3)
+      compass (>= 0.12.2, < 0.14)
+    cornerstone-source (0.1.5)
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    fssm (0.2.10)
+    haml (3.1.8)
+    haml_coffee_assets (1.11.1)
+      coffee-script (>= 1.0.0)
+      sprockets (>= 2.0.3)
+      tilt (>= 1.3.3)
     hike (1.2.1)
     i18n (0.6.4)
     journey (1.0.4)
     jquery-rails (2.2.1)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
+    jquery-source (1.7.1)
     json (1.7.7)
     mail (2.4.4)
       i18n (>= 0.4.0)
@@ -108,15 +150,21 @@ GEM
     uglifier (1.3.0)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
+    underscore-source (1.3.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
+  compass-rails
+  cornerstone-source (= 0.1.5)
+  editor_base!
   execjs
+  haml_coffee_assets
   jquery-rails
   pixel_editor!
+  pixie_sass!
   rails (= 3.2.11)
   sass-rails (~> 3.2.3)
   sqlite3

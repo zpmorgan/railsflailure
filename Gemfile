@@ -3,7 +3,13 @@ source 'https://rubygems.org'
 gem 'therubyracer'
 gem 'execjs'
 
+gem "compass-rails"
+
 gem 'pixel_editor', :git => 'git://github.com/PixieEngine/PixelEditor.git'
+gem "editor_base", :git => "git://github.com/PixieEngine/EditorBase" #:path => "../EditorBase"
+gem "pixie_sass", :git => "git://github.com/PixieEngine/pixie_sass"
+gem "cornerstone-source", "0.1.5"
+gem "haml_coffee_assets"
 
 gem 'rails', '3.2.11'
 
