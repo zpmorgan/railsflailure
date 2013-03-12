@@ -12,4 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require namespace
+//= require cornerstone
+//= require hamlcoffee
 //= require_tree .

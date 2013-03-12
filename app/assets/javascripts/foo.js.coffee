@@ -5,6 +5,7 @@
 
 #= require pixie/editor/pixel/create
 
-pixie = Pixie.Editor.Pixel.create()
-$("body").append(pixie)
+$ ->
+  pixie = Pixie.Editor.Pixel.create()
+  $("body").append(pixie)
 
